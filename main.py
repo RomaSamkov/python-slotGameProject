@@ -56,6 +56,7 @@ def get_slot_machine_spin(rows,cols, symbols):
 
     return columns
 
+
 def print_slot_machine(columns):
     for row in range(len(columns[0])):
         for i, column in enumerate(columns):
@@ -78,6 +79,7 @@ def deposit():
                 print('Amount must be greater than 0.')
         else:
             print('Please enter a number')
+
     return amount
 
 
@@ -92,6 +94,7 @@ def get_number_of_lines():
                 print('Amount must be greater than 0.')
         else:
             print('Please enter a number')
+
     return lines
 
 def get_bet():
@@ -105,7 +108,9 @@ def get_bet():
                 print(f'Amount must be between ${MIN_BET} - ${MAX_BET}')
         else:
             print('Please enter a number')
+            
     return amount
+
 
 def spin(balance):
     lines = get_number_of_lines()
